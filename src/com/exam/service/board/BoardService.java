@@ -13,4 +13,7 @@ public interface BoardService {
 	//게시글 등록
 	void insertBoard(BoardVO board) throws SQLException;
 
+	//게시글 상세정보
+	BoardVO selectBoardByBoardNo(String board_no) throws SQLException;
+	
 }

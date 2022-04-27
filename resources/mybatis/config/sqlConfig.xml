@@ -4,6 +4,8 @@
 	<properties resource="properties/db.properties" />
 	
 	<typeAliases>
+		<typeAlias type="java.lang.String" alias="str"/>
+		<typeAlias type="java.lang.Integer" alias="int"/>
 		<typeAlias type="com.exam.vo.comm.MemberVO" alias="member" />
 		<typeAlias type="com.exam.vo.board.BoardVO" alias="board" />
 	</typeAliases>

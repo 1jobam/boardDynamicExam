@@ -44,6 +44,7 @@ public class BoardRegistServlet extends HttpServlet {
 		
 		try {
 			boardService.insertBoard(board);
+			
 			boardList = boardService.selectBoardList();
 			
 			request.setAttribute("boardList", boardList);

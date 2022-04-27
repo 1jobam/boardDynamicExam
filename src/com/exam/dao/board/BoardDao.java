@@ -11,4 +11,6 @@ public interface BoardDao {
 
 	void insertBoard(BoardVO board) throws SQLException;
 
+	BoardVO selectBoardByBoardNo(String board_no) throws SQLException;
+
 }

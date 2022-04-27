@@ -38,4 +38,10 @@ public class BoardServiceImpl implements BoardService{
 		boardDao.insertBoard(board);
 	}
 
+
+	@Override
+	public BoardVO selectBoardByBoardNo(String board_no) throws SQLException {
+		return boardDao.selectBoardByBoardNo(board_no);
+	}
+
 }

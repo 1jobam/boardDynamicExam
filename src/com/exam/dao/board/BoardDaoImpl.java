@@ -55,4 +55,12 @@ public class BoardDaoImpl implements BoardDao{
 		
 	}
 
+	@Override
+	public BoardVO selectBoardByBoardNo(String board_no) throws SQLException {
+		sqlSession = sqlFactory.openSession();
+		BoardVO board = sqlSession.selectOne("Board-Mapper.selectBoardByBoardNo", board_no);
+		sqlSession.close();
+		return board;
+	}
+
 }
